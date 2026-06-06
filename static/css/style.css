@@ -8,7 +8,7 @@ body {
 
 /* Centered Form Styling */
 form {
-    max-width: 300px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -47,21 +47,14 @@ input[type="submit"]:hover {
 }
 
 /* Dropdown Menu */
-select#cuisine {
+select#cuisine,
+select#language {
     width: 200px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 10px;
-}
-
-select#cuisine::placeholder {
-    color: #999;
-}
-
-select#cuisine option {
-    font-size: 16px;
 }
 
 /* Subheading Label */
@@ -73,27 +66,16 @@ select#cuisine option {
     margin-bottom: 10px;
 }
 
-/* Language Dropdown */
-select#language {
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
 /* Checkbox Container */
 .checkbox-container {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    width: 400px;
+    width: 100%;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 400px;
 }
 
 /* Checkbox Group */

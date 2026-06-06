@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Generated Recipe</title>
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='css/style.css') }}"
-    />
-</head>
-<body>
-    <h2>Your Recipe:</h2>
-    <div class="recipe-content">
+{% extends "base.html" %}
+{% block content %}
+
+<div id="root" class="container">
+    <div class="page-header">
+        <h2 class="alert alert-success">Generated Recipe</h2>
         <p>{{ recipe|safe }}</p>
+        <a href="/">Generate another recipe</a>
     </div>
-    <a href="/">Generate another recipe</a>
-    <footer>by 2025810086 김승운</footer>
-</body>
-</html>
+</div>
+
+{% endblock %}

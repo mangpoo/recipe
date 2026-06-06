@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Recipe Generator</title>
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='css/style.css') }}"
-    />
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
     <h2>Input 3 Ingredients</h2>
     <form action="/generate_recipe" method="post">
         <input type="text" name="ingredient"
-            placeholder="Ingredient 1" required>
+            placeholder="Ingredient 1" required />
         <input type="text" name="ingredient"
-            placeholder="Ingredient 2" required>
+            placeholder="Ingredient 2" required />
         <input type="text" name="ingredient"
-            placeholder="Ingredient 3" required>
+            placeholder="Ingredient 3" required />
 
         <label class="subheading" for="cuisine">Choose a cuisine:</label>
         <select name="cuisine" id="cuisine">
@@ -51,8 +45,8 @@
             {% endfor %}
         </select>
 
-        <input type="submit" value="Generate Recipe">
+        <input type="submit" value="Generate Recipe" />
     </form>
-    <footer>by 2025810086 김승운</footer>
-</body>
-</html>
+</div>
+
+{% endblock %}
